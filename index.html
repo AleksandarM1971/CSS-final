@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+
+     body {
+         max-width: 1024px;
+         margin-left: 5vw;
+         margin-right: 5vw;
+     }   
+
+     h1 {
+        font-family: Century Gothic, Arial, sans-serif;
+        font-weight: normal;
+        font-size: 1.8em;
+        padding-left: 25px;
+     }
+
+    #row {
+        display: flex;
+        justify-content: left;
+        flex-flow: row wrap;
+        margin-top: 4vw;
+      
+
+
+        }
+
+        .row::after {
+        content: "";
+        display: block;
+        clear: left;
+        }
+        
+    .column {
+        float: left;
+        flex-basis: 20%;
+        height: 160px;
+        box-sizing: border-box;
+        padding: 25px;
+        display: flex;
+        flex-flow: row wrap;
+
+        }
+    .box {
+            width: 100%;
+            height: 75%;
+            border-radius: 8px 8px 0 0;
+            background-color: rgb(54, 135, 201);
+            background-image: url(placeholder-image.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            }
+
+    .text {
+        width: 100%;
+        height: 25%;
+        background-color: rgb(245, 241, 241);
+        border-radius: 0 0 8px 8px;
+       
+    }
+
+    .image {
+        font-family: Century Gothic, Arial, sans-serif;
+        font-size: 90%;
+        text-align: center;
+        vertical-align: middle;
+        color: rgb(158, 137, 137);
+        margin-block-start: 0.3em;
+        margin-block-end: 0em;
+    }
+    
+
+    #lorem {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        padding: 25px;
+
+    }
+
+    @media screen and (max-width: 1024px) {
+        .column {
+        flex-basis: 20%;
+        }
+        }
+
+    @media screen and (max-width: 768px) {
+        .column {
+        flex-basis: 33.33%;
+        height: 180px;
+        }
+        }
+
+    @media screen and (max-width: 414px) {
+        .column {
+        flex-basis: 100%;
+        height: 200px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Gallery Heading</h1>
+    <div id="row">
+  
+        <div class="column">
+        <div class="box"></div>
+        <footer class="text"><h2 class="image">Image Title</h2></footer>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <footer class="text"><h2 class="image">Image Title</h2></footer>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <footer class="text"><h2 class="image">Image Title</h2></footer>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <footer class="text"><h2 class="image">Image Title</h2></footer>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <footer class="text"><h2 class="image">Image Title</h2></footer>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <footer class="text"><h2 class="image">Image Title</h2></footer>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <footer class="text"><h2 class="image">Image Title</h2></footer>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <footer class="text"><h2 class="image">Image Title</h2></footer>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <footer class="text"><h2 class="image">Image Title</h2></footer>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <footer class="text"><h2 class="image">Image Title</h2></footer>
+        </div>
+    </div>
+    <div>
+        <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cras a lacinia nisi, nec tristique sem. Cras id telius ac mauris posuere vanus. Pallentesque vel mi justo. Aenean malesuada purus eu lacinia finibus. Praesent commodo euismod odio, eu pharetra nulla dignisim nec. Ut id nulla auque. Duis ultricies eusmod purus, ut lobortis tortor semper a. Nam elefend accumsan elit, in elementum lacus. Nunc varius imperdiet nisi eget pretium auque molestie a. Nullam ut malesuada enim. Intefer non verlit fringilla, porta ex vitae, portitur velit. Ut luctus lacinia libero a scelerisque. Ut ullamcorper arcu at mauris ullamcorper tempor.</p>
+    </div>
+
+       
+</body>
+</html>
